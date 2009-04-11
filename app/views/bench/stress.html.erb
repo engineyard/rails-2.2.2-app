@@ -3,4 +3,6 @@
 <% @items.each do |item| %>
   <li><%= item.title %></li>
   <li><%= item.body %></li>
-<% end %>  
+<% end %>
+
+<% @items.each {|i| i.destroy }%>
