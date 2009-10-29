@@ -7,7 +7,7 @@ class BenchController < ApplicationController
   def stress
     @items = []
     5.times do
-      @items << Item.create(:title => 'hello world',
+      @items << Item.create(:title => 'hello worlds',
                             :body  => 'this text is fake.' * 50)
     end
   end
