@@ -12,4 +12,8 @@ class BenchController < ApplicationController
     end
   end
   
+  def info
+    render :text => `ruby -v`
+  end
+
 end
